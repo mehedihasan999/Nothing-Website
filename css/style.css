@@ -1,0 +1,522 @@
+html,body{
+    margin: 0;
+}
+
+/* Global Css */
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(122, 113, 113);
+}
+ul{
+    list-style: none;
+}
+p{
+    font-family: sans-serif;
+    font-size: .8rem;
+    
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+button.btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    transition: .5s;
+    color: #fff;
+}
+/*---X Global Css X---*/
+
+
+
+/*----- Nav Bar -----*/
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    max-height:10vh ;
+    background:white;
+    justify-content: space-between;
+    overflow: hidden;
+    padding:0 1rem;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.nav-logo{
+    padding: .7rem 0;
+}
+.nav-logo .logo{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.nav .tocal-colaps{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+}
+
+.nav .tocal-colaps .tocola-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7re  0;
+}
+.nav .tocal-colaps .tocola-icon i{
+    font-size: 1.4rem;
+    color: gray;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li a{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding:1rem;
+}
+.nav-list li a:hover{
+    background: rgba(16, 16, 37, 0.793);
+    color: white;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.social{
+    padding-right: 30px;
+    padding-top: 1rem; 
+}
+.social a{
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+}
+.social a:hover{
+    color:#a1c4cf;
+}
+/*---x-- Nav Bar ---x--*/
+
+/* Main Section Css */
+
+/* first section */
+
+main .first-section{
+    background: url('../image/Backgroud-1.jpg');
+    background-size: cover;
+    height: 110vh;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    justify-content: center;
+}
+ main .first-section .first-bg{
+    margin-top: 250px;
+    text-align: center;
+    color: #fff;
+ }
+ main .first-section .first-bg h3 , h1{
+    margin: 1rem;
+ }
+ main .first-section .first-bg .btn{
+    background: linear-gradient(120deg,#a1c4fd 0% ,#c2e9fb 100%);
+ }
+ main .first-section .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    transition: .5s;
+    color: #fff;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+/*x first section x*/
+
+/* Sceand section */
+
+main .blog{
+    background: #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.card{
+    background:#FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    flex-basis: 32%;
+    width: 50px;
+    height: 16rem;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.card:hover{
+   background-color:#10221B;
+   color: white;
+   transition: .5s;
+}
+.card .image{
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card:hover>.image{
+    border: 1px solid white;
+}
+.card p{
+    padding: 15px 0;
+}
+section h1{
+    text-align: center;
+}
+section h2{
+    color: #219150;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*x Sceand section x*/
+
+/* 3rd Section  */
+
+main .therd-section{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+main .therd-section{
+    margin: 2rem 0;
+}
+main .therd-section .post-contant{
+    margin-left: 2rem;
+}
+main .therd-section .post-contant > .post-image >div{
+    width: 900px;
+    overflow: hidden;
+    height: 550px;
+    border-radius: 1rem;
+}
+
+main .therd-section .post-contant .post-image img{
+    width: 1000px;
+}
+main .therd-section .post-contant .post-image img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+main .therd-section .post-contant .post-info , .post-tittle{
+    padding: 1rem 0;
+    margin-top: -500px;
+}
+main .therd-section .post-contant .post-info{
+    margin-top: -60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5pc;
+    -webkit-border-radius: 5pc;
+    -moz-border-radius: 5pc;
+    -ms-border-radius: 5pc;
+    -o-border-radius: 5pc;
+}
+main .therd-section .post-contant .post-tittle{
+    text-align: left;
+}
+main .therd-section .post-contant .post-tittle a{
+    font-size: 1.7rem;
+    color: #10221B;
+    margin-left: 1rem;
+}
+main .therd-section .post-contant .post-tittle p{
+    color: gray;
+    font-size: medium;
+    width: 60vw;
+    margin-left: 1rem;
+}
+main .therd-section .post-contant .post-btn{
+    margin-left: 1rem;
+    -webkit-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -o-border-radius: 0 ;
+}
+main .therd-section .post-contant .post-btn:hover{
+    border-radius: 1px solid black ;
+    background: transparent;
+    color: #10221B;
+}
+.therd-section aside{
+    text-align: center;
+    margin: 0 auto;
+}
+.therd-section aside .comment{
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.therd-section aside .comment:hover{
+    background: transparent;
+    background: #060f13;
+    color: #ffffff;
+}
+.aside-down{
+    transition: all .40s ease;
+    border: 1px solid;
+    width: 260px;
+    height: 285px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background-color: #10221B;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.aside-down .main{
+    margin-top: 100px;
+    color: #FFFFFF;
+}
+.aside-down:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top: 5px solid green;
+}
+/*---x 3rd Section x---*/
+
+/*--- 4rd Section ---*/
+.Section-fore{
+    margin-top: 5.5rem;
+}
+.cards-3{
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px , auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 5rem;
+
+}
+.card-one{
+    padding: 45px;
+    background: #12141c;
+    border-top: 5px solid transparent;
+    transition:all .40s ease ;
+    -webkit-transition:all .40s ease ;
+    -moz-transition:all .40s ease ;
+    -ms-transition:all .40s ease ;
+    -o-transition:all .40s ease ;
+    cursor: pointer;
+}
+.card-one h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+    transition: all .40s ease;
+}
+.card-one p{ 
+    color:lightgray;
+    font-size: .7rem;
+    line-height: 30px;
+}
+.card-one:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top: 5px solid green ;
+    -webkit-transform: scale(1.01) translateY(-5px);
+    -moz-transform: scale(1.01) translateY(-5px);
+    -ms-transform: scale(1.01) translateY(-5px);
+    -o-transform: scale(1.01) translateY(-5px);
+}
+.card-one:hover>h3{
+    color: green;
+}
+.Section-fore .services-s{
+    text-align: center;
+}
+
+/*---x 4rd Section x---*/
+
+/*x Main Section Css x*/
+
+/* footer Section */
+    footer.footer{
+        margin-top: 3.5rem;
+        height: 100%;
+        background-color: #060f13;
+        position: relative;
+    }
+    footer.footer .container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    footer.footer .container  p{
+        text-align: left;
+        color: cadetblue;
+        margin-left: 2rem;
+        line-height: 24px;
+    }
+     .follow {
+        margin: 0 auto;
+     }
+    .follow a i{
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: block;
+    }
+      .follow a i:hover{
+        color: blue;
+        transition: 1s;
+      }
+
+/*x footer Section x*/
+
+
+
+/* Midea Query for 750PX Device */
+
+
+@media only screen and (max-width:750px) {
+
+    .nav , .nav-list{
+        flex-direction: column;
+    }
+        .nav-list li a {
+            margin: 1rem 0;
+        }
+    .nav-list li a:hover{
+        color: olivedrab;
+        font-size: 1rem;
+        background: transparent;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .nav .tocal-colaps{
+        display: initial;
+    }
+   .card{
+    flex-basis: 49%;
+    margin-bottom: 20px;
+   }
+   .card-one{
+    margin: 2rem;
+   }
+   /* Main  #scend-section */
+
+   main .therd-section{
+    margin: 0 2rem 0 1rem;
+    display: block;
+   }
+   main .therd-section .post-contant>.post-image>div {
+    display: none;
+   }
+
+    main .therd-section .post-contant .post-info ,
+    .post-tittle {
+    margin-top: 10px;
+    }
+
+   .therd-section aside{
+    display: flex;
+    flex-direction: column;
+   }
+   .therd-section aside .comment{
+    padding: 1rem 0;
+    background: lightgray;
+    width: 100%;
+   }
+   .therd-section .aside-down{
+    display: none;
+   }
+   footer.footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+}
+
+
+
+
+
+@media only screen and (max-width:1024px){
+
+
+    main .therd-section .post-contant > .post-image >div{
+    width: 90vw;
+    overflow: hidden;
+    height: 550px;
+    border-radius: 1rem;
+    }
+
+    main .therd-section .post-contant .post-image img{
+    width: 100%;
+    }
+    main .therd-section .post-contant .post-image img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+    }
+    .therd-section aside{
+        display: none;
+    }
+
+
+    main .therd-section{
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .therd-section .post-contant .post-tittle p{
+        color: gray;
+    font-size: medium;
+    width: 90%;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:400px){
+    .card{
+        flex-basis: 100%;
+    }
+}
+
+/* Midea Query for 750PX Device */
